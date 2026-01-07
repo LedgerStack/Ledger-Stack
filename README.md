@@ -44,7 +44,7 @@ This is not subjective. It is a deterministic evaluation of program state.
 
 ## System Architecture
 
-![LedgerStack System Architecture](./assets/blueprints/architecture.system-overview.png)
+![LedgerStack System Architecture](./blueprints/architecture.system-overview.png)
 
 LedgerStack is designed as a multi-tier verification pipeline with strict separation between data ingestion, analysis, and presentation layers. The architecture prioritizes reproducibility and auditability over speed.
 
@@ -70,7 +70,7 @@ No off-chain oracles are involved. No reputation systems are consulted. No socia
 
 ## From Claim to Ledger
 
-![Dev Ledger Verification Flow](./assets/blueprints/flow.dev-ledger-verification.png)
+![Dev Ledger Verification Flow](./blueprints/flow.dev-ledger-verification.png)
 
 Verification begins when a user submits a token mint address. The system does not require the user to specify the developer wallet, the lock contract address, or any metadata about the token. These are derived automatically.
 
@@ -108,7 +108,7 @@ This is not a score. It is a binary or ternary determination based on formal rul
 
 ## What "Locked" Actually Means
 
-![Lock Verification Matrix](./assets/blueprints/matrix.lock-verification.png)
+![Lock Verification Matrix](./blueprints/matrix.lock-verification.png)
 
 The term "locked" is used loosely in crypto discourse. LedgerStack applies a strict definition based on control immutability.
 
@@ -155,7 +155,7 @@ LedgerStack does not evaluate the likelihood that the escape hatch will be used.
 
 ## Deterministic Report Output
 
-![Sample Dev Ledger Report](./assets/blueprints/report.sample-output.png)
+![Sample Dev Ledger Report](./blueprints/report.sample-output.png)
 
 Every verification produces a Dev Ledger report. The report is a structured JSON object that captures the complete analysis, including token metadata, developer wallet identification, allocation breakdown, lock contract details, and final verdict.
 
@@ -218,7 +218,7 @@ The verification signature is a cryptographic hash of the report contents, signe
 
 ## Common Failure Modes
 
-![Control Path Failure Diagram](./assets/blueprints/failure.control-paths.png)
+![Control Path Failure Diagram](./blueprints/failure.control-paths.png)
 
 Most tokens that claim to be locked are not. The failure modes are well-understood and often result from incomplete renunciation of control rather than intentional deception.
 
@@ -357,5 +357,6 @@ Claims fade. Communities fracture. Developers abandon projects. These are social
 Ledgers persist. Program state is immutable until explicitly modified. Control relationships are encoded in cryptographic primitives. Verification is a technical problem, not a social one.
 
 The goal of LedgerStack is to make lock verification trivial. A developer should not be able to claim their tokens are locked without on-chain evidence. A user should not need to trust a developer's word when the ledger can be read directly.
+
 
 Verification should be mechanical, reproducible, and accessible to anyone with an RPC connection. This is the standard LedgerStack implements.
