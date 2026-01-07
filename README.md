@@ -44,7 +44,7 @@ This is not subjective. It is a deterministic evaluation of program state.
 
 ## System Architecture
 
-![LedgerStack System Architecture](./blueprints/architecture.system-overview.png)
+![LedgerStack System Architecture](blueprints/architecture.system-overview.png)
 
 LedgerStack is designed as a multi-tier verification pipeline with strict separation between data ingestion, analysis, and presentation layers. The architecture prioritizes reproducibility and auditability over speed.
 
@@ -70,7 +70,7 @@ No off-chain oracles are involved. No reputation systems are consulted. No socia
 
 ## From Claim to Ledger
 
-![Dev Ledger Verification Flow](./blueprints/flow.dev-ledger-verification.png)
+![Dev Ledger Verification Flow](blueprints/flow.dev-ledger-verification.png)
 
 Verification begins when a user submits a token mint address. The system does not require the user to specify the developer wallet, the lock contract address, or any metadata about the token. These are derived automatically.
 
@@ -360,3 +360,4 @@ The goal of LedgerStack is to make lock verification trivial. A developer should
 
 
 Verification should be mechanical, reproducible, and accessible to anyone with an RPC connection. This is the standard LedgerStack implements.
+
