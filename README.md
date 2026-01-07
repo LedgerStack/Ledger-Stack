@@ -70,7 +70,7 @@ No off-chain oracles are involved. No reputation systems are consulted. No socia
 
 ## From Claim to Ledger
 
-![Dev Ledger Verification Flow](flow.dev-ledger-verification.png)
+![Dev Ledger Verification Flow](flowdev-ledger-verification.png)
 
 Verification begins when a user submits a token mint address. The system does not require the user to specify the developer wallet, the lock contract address, or any metadata about the token. These are derived automatically.
 
@@ -360,6 +360,7 @@ The goal of LedgerStack is to make lock verification trivial. A developer should
 
 
 Verification should be mechanical, reproducible, and accessible to anyone with an RPC connection. This is the standard LedgerStack implements.
+
 
 
 
