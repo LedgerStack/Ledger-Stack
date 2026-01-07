@@ -1,4 +1,4 @@
-# LedgerStack
+# Ledger Stack
 
 <div align="center">
   <img src="./ledgerlogo.png" alt="LedgerStack Logo" width="400"/>
@@ -360,6 +360,7 @@ The goal of LedgerStack is to make lock verification trivial. A developer should
 
 
 Verification should be mechanical, reproducible, and accessible to anyone with an RPC connection. This is the standard LedgerStack implements.
+
 
 
 
